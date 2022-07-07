@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Muhammad Tayyab Asghar" />
+    <title>Learning HTML, CSS, JS & TS</title>
+    <script type="text/javascript" src="scripts/timer.js"></script>
+    <script type="text/javascript" src="scripts/slider.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+
+<body>
+    <div class="container mx-auto">
+        <!-- Header -->
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo flex item-center text-blue">Website Name</div>
+                <ul class="navbar flex item-center">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><button class="btn">Buy Now</button></li>
+                </ul>
+            </nav>
+            <hr />
+        </header>
+        <!-- Main -->
+        <main class="min-h-screen">
+            <!-- Start Home -->
+            <section id="home">
+                <div class="flex">
+                    <div class="top-left flex justify-center flex-col pad-h">
+                        <h1 class="font-bold margin-v">Sale in Progress</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus neque quaerat culpa! Accusamus ipsum mollitia commodi
+                            provident sit beatae, soluta nam nobis at aliquid. Natus culpa
+                            facere rerum pariatur impedit.
+                        </p>
+                    </div>
+                    <div class="top-right">
+                        <div class="counter max-height flex flex-col justify-center">
+                            <h1 id="headline" class="font-bold font-size36">Time Left for Sale</h1>
+                            <div id="countdown" class="pad-timer">
+                                <ul class="flex justify-between font-medium">
+                                    <li><span id="days"></span>Days</li>
+                                    <li><span id="hours"></span>Hours</li>
+                                    <li><span id="minutes"></span>Minutes</li>
+                                    <li><span id="seconds"></span>Seconds</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Home -->
+            <hr />
+            <section id="about">
+                <div>
+                    <div>About Us</div>
+                    <div></div>
+                </div>
+            </section>
+            <hr />
+            <!-- Start Contact Us -->
+            <section id="contact-us" class="flex justify-center">
+                <div class="card">
+                    <div class="pad-contact">
+                        <!-- Section Heading -->
+                        <h2 class="font-size28 font-bold text-center margin-v24">
+                            Contact us
+                        </h2>
+                        <!-- Section Description -->
+                        <p class="text-center w-responsive mx-auto margin-b">
+                            Do you have any questions? Please do not hesitate to contact us
+                            directly. Our team will come back to you within a matter of
+                            hours to help you.
+                        </p>
+                        <!-- Start Input Field -->
+                        <div>
+                            <div class="pad-h">
+                                <form id="contact-form" name="contact-form" onsubmit="submit()">
+                                    <div class="flex justify-between">
+                                        <!-- Name Field -->
+                                        <div class="form-group">
+                                            <input type="name" id="name" class="form-field" placeholder="Your Name"
+                                                required>
+                                            <label for="name" class="form-label">Your Name</label>
+                                        </div>
+                                        <!-- Email Filed -->
+                                        <div class="form-group">
+                                            <input type="email" id="email" class="form-field" placeholder="Your Email"
+                                                required>
+                                            <label for="email" class="form-label">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <!-- Subject Field -->
+                                    <div class="form-group">
+                                        <input type="text" id="subject" class="form-field" placeholder="Subject"
+                                            required>
+                                        <label for="subject" class="form-label">Subject</label>
+                                    </div>
+                                    <!-- Message Field -->
+                                    <div class="form-group">
+                                        <textarea id="message" class="form-field margin-b" placeholder="Your Message"
+                                            rows="6"></textarea>
+                                        <label for="message" class="form-label">Your Message</label>
+                                    </div>
+                                    <!-- Submit Button -->
+                                    <div class="text-center margin-v">
+                                        <!-- <input type="submit" value="Contact" class="submit-btn" onclick="submit()"> -->
+                                        <button class="submit-btn" type="submit">Contact</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Input Field -->
+                    </div>
+            </section>
+            <!-- End Contact Us -->
+        </main>
+        <hr />
+        <!-- Start Footer -->
+        <footer>
+            <div class=" flex justify-between pad flex-row-reverse">
+                <!-- Start Right Footer -->
+                <ul class="foot-right item-center">
+                    <li>
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/" aria-label="Twitter">
+                            <svg id='twitter' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.5 222.3" role="img">
+                                <title>Twitter</title>
+                                <g fill="currentColor">
+                                    <path
+                                        d="M273.5,26.3a109.77,109.77,0,0,1-32.2,8.8A56.07,56.07,0,0,0,266,4.1a113.39,113.39,0,0,1-35.7,13.6,56.1,56.1,0,0,0-97,38.4,54,54,0,0,0,1.5,12.8A159.68,159.68,0,0,1,19.1,10.3,56.12,56.12,0,0,0,36.5,85.2a56.06,56.06,0,0,1-25.4-7v.7a56.11,56.11,0,0,0,45,55,55.65,55.65,0,0,1-14.8,2,62.39,62.39,0,0,1-10.6-1,56.24,56.24,0,0,0,52.4,39,112.87,112.87,0,0,1-69.7,24A119,119,0,0,1,0,197.1a158.83,158.83,0,0,0,86,25.2c103.2,0,159.6-85.5,159.6-159.6,0-2.4-.1-4.9-.2-7.3a114.25,114.25,0,0,0,28.1-29.1">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com" aria-label="Facebook">
+                            <svg id='facebook' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.3 15.4" role="img">
+                                <title>Facebook</title>
+                                <g fill="currentColor">
+                                    <path
+                                        d="M14.5,0H.8A.88.88,0,0,0,0,.9V14.5a.88.88,0,0,0,.8.9H8.1v-6h-2V7.1h2V5.4a2.87,2.87,0,0,1,2.5-3.1h.5a10.87,10.87,0,0,1,1.8.1V4.5H11.6c-1,0-1.1.5-1.1,1.1V7.1h2.3l-.3,2.3h-2v5.9h3.9a.88.88,0,0,0,.9-.8h0V.8A.86.86,0,0,0,14.5,0Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com" aria-label="YouTube">
+                            <svg id='youtube' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.17 13.6" role="img">
+                                <title>YouTube</title>
+                                <g fill="currentColor">
+                                    <path
+                                        d="M18.77,2.13A2.4,2.4,0,0,0,17.09.42C15.59,0,9.58,0,9.58,0a57.55,57.55,0,0,0-7.5.4A2.49,2.49,0,0,0,.39,2.13,26.27,26.27,0,0,0,0,6.8a26.15,26.15,0,0,0,.39,4.67,2.43,2.43,0,0,0,1.69,1.71c1.52.42,7.5.42,7.5.42a57.69,57.69,0,0,0,7.51-.4,2.4,2.4,0,0,0,1.68-1.71,25.63,25.63,0,0,0,.4-4.67A24,24,0,0,0,18.77,2.13ZM7.67,9.71V3.89l5,2.91Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End Right Footer -->
+                <!-- Start Left Footer -->
+                <ul class="foot-left font-size12 item-center text-gray">
+                    <li>&copy; 2022 Website, Inc.</li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Privacy">Privacy</a>
+                    </li>
+                </ul>
+                <!-- End Left Footer -->
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <script type="text/javascript" src="scripts/form.js"></script>
+</body>
+
+</html>
